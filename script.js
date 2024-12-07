@@ -14,8 +14,6 @@ button.addEventListener("click",async()=>{
     let unit=select.value;
     console.log(location)
     console.log(unit)
-    input.value="";
-    select.value="metric";
     let data = await getWeather(todayDate(),location,unit); 
     console.log(data) 
     let temperature=jsonProcessing(data).temperature;
